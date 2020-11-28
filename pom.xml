@@ -6,17 +6,23 @@
 
     <groupId>vikkey.spring.learning</groupId>
     <artifactId>spring-learning</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <url>https://www.vikkey.cn</url>
 
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>11</java.version>
         <maven.compiler.release>11</maven.compiler.release>
         <spring-boot.versioin>2.4.0</spring-boot.versioin>
         <sprint-cloud.version>Hoxton.SR9</sprint-cloud.version>
     </properties>
+
+    <modules>
+        <module>springboot-learning</module>
+        <module>springcloud-learning</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
