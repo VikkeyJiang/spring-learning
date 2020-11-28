@@ -1,10 +1,10 @@
-package springboot.learning.web;
+package learning.springboot.web;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootWebFluxApplicationTests {
+class SpringBootWebApplicationTests {
 
     @Test
     void contextLoads() {

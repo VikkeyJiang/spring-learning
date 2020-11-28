@@ -22,6 +22,7 @@
     <modules>
         <module>springboot-learning</module>
         <module>springcloud-learning</module>
+        <module>unittest-learning</module>
     </modules>
 
     <dependencyManagement>

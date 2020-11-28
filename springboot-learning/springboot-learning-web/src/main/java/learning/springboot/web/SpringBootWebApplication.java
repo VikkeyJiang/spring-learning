@@ -1,13 +1,13 @@
-package springboot.learning.webflux;
+package learning.springboot.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootWebFluxApplication {
+public class SpringBootWebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootWebFluxApplication.class, args);
+        SpringApplication.run(SpringBootWebApplication.class, args);
     }
 
 }
