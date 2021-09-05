@@ -13,6 +13,9 @@ public class Phone {
     @Column(name = "id", nullable = false)
     private Long id;
 
+    /**
+     * 子对象持有ManyToOne的关系
+     */
     @ManyToOne
     @JoinColumn(name = "conn_person_id")
     private Person person;

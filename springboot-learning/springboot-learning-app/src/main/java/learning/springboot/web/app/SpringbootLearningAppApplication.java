@@ -11,11 +11,9 @@ public class SpringbootLearningAppApplication implements CommandLineRunner {
 
     private static final Logger logger = LoggerFactory.getLogger(SpringbootLearningAppApplication.class);
 
-
     public static void main(String[] args) {
         SpringApplication.run(SpringbootLearningAppApplication.class, args);
     }
-
 
     @Override
     public void run(String... args) {

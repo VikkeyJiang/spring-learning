@@ -12,6 +12,9 @@ public class Book {
     @Column(name = "id", nullable = false)
     private Long id;
 
+    /**
+     * 子对象设定父对象的关联关系
+     */
     @ManyToOne
     private Person person;
 

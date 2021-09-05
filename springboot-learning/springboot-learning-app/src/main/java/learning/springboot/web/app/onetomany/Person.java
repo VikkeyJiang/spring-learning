@@ -17,13 +17,17 @@ public class Person {
     private Long id;
 
     /**
-     * Phone中没有制定ManyToOne，是无向关联，创建person和phone的中间关系表
+     * Phone中没有指定ManyToOne，是单向关联，创建person和phone的连接表
+     * <p>
+     * 父对象持有OneToMany的关系
      */
     @OneToMany
     private List<Phone> phoneList;
 
     /**
-     * Book中有ManyToOne，是有向关联，在Book表上创建关联字段
+     * Book中有ManyToOne，是双向关联，在Book表上创建关联字段
+     * <p>
+     * 关联的属性在Book中名字为person
      */
     @OneToMany(mappedBy = "person")
     private List<Book> books;
