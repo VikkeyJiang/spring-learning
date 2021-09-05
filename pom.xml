@@ -10,13 +10,12 @@
     <packaging>pom</packaging>
     <url>https://www.vikkey.cn</url>
 
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>11</java.version>
         <maven.compiler.release>11</maven.compiler.release>
-        <spring-boot.versioin>2.4.0</spring-boot.versioin>
-        <sprint-cloud.version>Hoxton.SR9</sprint-cloud.version>
+        <spring-boot.versioin>2.5.4</spring-boot.versioin>
+        <sprint-cloud.version>2020.0.3</sprint-cloud.version>
     </properties>
 
     <modules>
@@ -41,7 +40,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-debug-jdk15on</artifactId>
+                <version>1.69</version>
+            </dependency>
         </dependencies>
+
     </dependencyManagement>
 
     <build>
