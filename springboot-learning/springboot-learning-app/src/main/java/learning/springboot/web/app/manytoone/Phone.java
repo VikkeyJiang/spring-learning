@@ -3,11 +3,10 @@ package learning.springboot.web.app.manytoone;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity(name = "tbl_many_to_one_phone")
-public class Phone {
+class Phone {
 
     @Id
     @Column(name = "id", nullable = false)
@@ -17,7 +16,6 @@ public class Phone {
      * 子对象持有ManyToOne的关系
      */
     @ManyToOne
-    @JoinColumn(name = "conn_person_id")
     private Person person;
 
     public Long getId() {

@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity(name = "tbl_one_to_many_phone")
-public class Phone {
+class Phone {
 
     @Id
     @Column(name = "id", nullable = false)

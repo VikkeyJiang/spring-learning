@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
 @Entity(name = "tbl_one_to_one_book")
-public class Book {
+class Book {
 
     @Id
     @Column(name = "id", nullable = false)
