@@ -1,0 +1,9 @@
+spring:
+  config:
+    import:
+      - optional:file:/code/config/postgresql.yaml
+  profiles:
+    default: dev
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
