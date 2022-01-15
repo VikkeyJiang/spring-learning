@@ -1,0 +1,21 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: eureka-server
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      xa-zone1: http://127.0.0.1:9000/eureka/
+      xa-zone2: http://127.0.0.1:9001/eureka/
+    region: xian
+    availability-zones:
+      xian: xa-zone2,xa-zone1
+    prefer-same-zone-eureka: true
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+    ip-address: 127.0.0.1
+    hostname:

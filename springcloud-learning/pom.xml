@@ -12,6 +12,15 @@
     <artifactId>springcloud-learning</artifactId>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>springcloud-gateway</module>
+        <module>springcloud-system</module>
+        <module>springcloud-eureka-server</module>
+        <module>springcloud-project</module>
+        <module>spirngcloud-config-server</module>
+        <module>springcloud-app</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>
